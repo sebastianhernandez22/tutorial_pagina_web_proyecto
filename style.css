@@ -259,7 +259,7 @@ text-align: center;
 /* Crear una tarjeta en blanco con sombreado alrededor */
 .card {
   padding: 10px;
-  background-color: white;
+  background-color: rgb(108, 87, 202);
   border-radius: 10px;
   box-shadow: -7px -7px 20px rgba(0, 0, 0, 0.2),
                7px  7px 20px rgba(0, 0, 0, 0.2)
@@ -301,7 +301,7 @@ text-align: center;
 
 .circle {
   background-color: transparent;
-  border:3px solid purple;
+  border:3px solid rgb(114, 40, 199);
   height:90px;
   position: relative;
   top: -30px;
@@ -310,4 +310,69 @@ text-align: center;
   -moz-border-radius:50%;
   -webkit-border-radius:50%;
   width:90px;
+}
+/* Add padding around the footer as well */
+
+footer {
+  background-color: rgb(128, 44, 167);
+  padding: 20px 10px;
+}
+
+/* Sets all link texts to white and puts margin to the left and right */
+
+footer a {
+  color: white;
+  margin: 0 10px;
+}
+footer a:hover {
+  color: #9867C5;
+  border-bottom: 2px solid #9867C5;
+}
+/* Tablets y pantallas más pequeñas */
+
+/* Alinear todo el texto al centro. Esto moverá todo el texto, incluyendo el formulario al centro.*/
+
+.showcase {
+  height: auto;
+  text-align: center;
+}
+
+/* Esto restablece el ancho del contendor de la imagen y agrega margen a la izquierda 
+*/ 
+
+.image {
+  width: 600px;
+  margin-left: 80px;
+}
+
+/* Cambia las secciones de servicio de lado-a-lado para que cada una se posicione en una sóla linea. Centra el texto. */
+
+.stats .flex {
+  flex-direction: column;
+}
+
+.stats {
+  text-align: center;
+}
+
+/* Asegura que cada sección en las estadísticas no exceda el ancho del elemento padre. */
+
+.stat {
+  width: 100%;
+  padding-right: 80px;
+}
+
+/* Mueve el círculo al centro de la tarjeta  */
+
+.circle {
+    background-color: transparent;
+    border:3px solid purple;
+    height:90px;
+    position: relative;
+    top: -30px;
+    left: 270px;
+    border-radius:50%;
+    -moz-border-radius:50%;
+    -webkit-border-radius:50%;
+    width:90px;
 }

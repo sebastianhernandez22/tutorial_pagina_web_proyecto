@@ -141,12 +141,12 @@
   width: 800px;
 }
 .stats .fa {
-  color: purple;
+  color: rgb(163, 62, 202);
 }
 
 .showcase {
   height: 300px;
-  background-color: purple;
+  background-color: rgb(118, 26, 172);
 }
 /* Añade margen bajo el texto */
 .showcase p {
@@ -233,5 +233,81 @@
 }
 
 .stats .fa {
-  color: purple;
+  color: rgb(145, 53, 206);
+}
+/* Envuelve la imagen dentro de una figura circular y define su altura para que tome todo el alto de su elemento padre */
+
+.testimonial img {
+  height: 100%;
+  clip-path: circle();
+}
+
+/* Alinea el texto al centro */
+
+.testimonial h3{
+text-align: center;
+}
+/* Crear un grid de tres columnas equidistantes. Definir un espaciado de 40px entre ellas */
+
+.grid-3 {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 40px;
+}
+
+
+/* Crear una tarjeta en blanco con sombreado alrededor */
+.card {
+  padding: 10px;
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: -7px -7px 20px rgba(0, 0, 0, 0.2),
+               7px  7px 20px rgba(0, 0, 0, 0.2)
+}
+.testimonial {
+  color: black;
+  padding: 40px;
+}
+/* Envuelve la imagen dentro de una figura circular y define su altura para que tome todo el alto de su elemento padre */
+
+.testimonial img {
+  height: 100%;
+  clip-path: circle();
+}
+
+/* Alinea el texto al centro */
+
+.testimonial h3{
+text-align: center;
+}
+
+/* Crear un grid de tres columnas equidistantes. Definir un espaciado de 40px entre ellas */
+
+.grid-3 {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 40px;
+}
+
+
+/* Crear una tarjeta en blanco con sombreado alrededor */
+.card {
+  padding: 10px;
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: -7px -7px 20px rgba(0, 0, 0, 0.2),
+               7px  7px 20px rgba(0, 0, 0, 0.2)
+}
+
+.circle {
+  background-color: transparent;
+  border:3px solid purple;
+  height:90px;
+  position: relative;
+  top: -30px;
+  left: 120px;
+  border-radius:50%;
+  -moz-border-radius:50%;
+  -webkit-border-radius:50%;
+  width:90px;
 }
